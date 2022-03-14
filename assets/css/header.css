@@ -172,3 +172,48 @@ header.container{
         padding-bottom: 20px;
     }
 }
+
+@media(max-width: 560px) {
+    header.container{
+        position: absolute;
+        max-width: 100%;
+        width: 100%;
+        top: 0px;
+    }
+
+    .logo-header {
+        justify-content: flex-end;
+    }
+    .logo-header img:first-child {
+        width: 20%;
+        height: auto;
+    }
+    .logo-header img:nth-child(2) {
+        width: 50%;
+        height: auto;
+    }
+
+    .user-menu { 
+        gap:5px;
+    }
+    .user-menu i {
+        font-size: 1.5rem
+    }
+}
+
+@media(max-width: 375px) {
+    header.container {
+        grid-template-columns: 3fr 5fr 2fr;
+    }
+    .logo-header{
+        justify-content: center;
+    }
+    .logo-header img:first-child {
+        width: 15%;
+        height: auto;
+    }
+    .logo-header img:nth-child(2) {
+        width: 40%;
+        height: auto;
+    }
+}
