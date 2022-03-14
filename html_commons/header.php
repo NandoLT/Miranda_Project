@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/gh/hung1001/font-awesome-pro@4cac1a6/css/all.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/base.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/header.css"/>
+    <link rel="stylesheet" type="text/css" href="./assets/css/footer.css"/>
 </head>
 <body>
 <div class="nav-bar">  

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+footer {
+  background-image: url("../images/footer_back.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: contain;
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+footer .footer-container {
+  max-width: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+@media (max-width: 1024px) {
+  footer .footer-container {
+    display: block;
+    flex-wrap: no-wrap;
+  }
+}
+footer .footer-title {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 24px;
+}
+footer .footer-subtitle {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 20px;
+  line-height: 0px;
+}
+footer .footer-content {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+footer .miranda-contact--phone, footer .miranda-contact--mail, footer .miranda-contact--location {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  align-content: center;
+}
+footer .miranda-info--rrss {
+  display: flex;
+  gap: 20px;
+}
+footer .miranda-info--rrss i {
+  font-size: 45px;
+  background-color: #F8F8F8;
+  color: #777777;
+  padding: 5px;
+  border-radius: 5px;
+}
+footer .miranda-info--rrss i:hover {
+  background-color: #BEAD8E;
+  color: #ffffff;
+}
+footer .miranda-services span {
+  display: flex;
+  gap: 25px;
+}
+footer .miranda-services ul {
+  padding-left: 0px;
+  list-style: none;
+}
+footer .miranda-services ul li::before {
+  content: "+";
+  padding-right: 8px;
+}
+footer .miranda-contact--info {
+  margin-left: 20px;
+}
+
+/*# sourceMappingURL=footer.css.map */

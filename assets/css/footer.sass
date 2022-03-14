@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap')
+
+$font-footer-title: 'Old Standard TT', sans-serif
+$font-footer-subtitle: 'Old Standard TT', sans-serif
+$font-footer-content: 'Roboto', sans-serif
+$font-title-size: 24px
+$font-subtitle-size: 20px
+$font-footer-content-size: 16px
+
+$color-socialicon-hover: #BEAD8E
+$color-socialicon: #777777
+$color-socialicon-bckg: #F8F8F8
+
+$color-icon-contact: #BEAD8E
+
+$footer-back-image: image-url('./assets/images/footer-back.png', false, false)
+
+footer
+    background-image: url('../images/footer_back.png')
+    background-position: center
+    background-repeat: repeat
+    background-size: contain
+    position: relative
+    max-width: 100%
+    width: 100%
+
+    .footer-container
+        max-width: 100%
+        width: 90%
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-evenly
+    @media(max-width:1024px)
+        .footer-container
+            display: block
+            flex-wrap: no-wrap
+
+    .footer-title
+        font-family: $font-footer-title
+        font-size: $font-title-size
+    .footer-subtitle
+        font-family: $font-footer-subtitle
+        font-size: $font-subtitle-size
+        line-height: 0px
+    .footer-content 
+        font-family: $font-footer-content
+        font-size: $font-footer-content-size
+    
+    .miranda-contact--phone, .miranda-contact--mail, .miranda-contact--location
+        display: flex
+        align-items: center
+        flex-wrap: nowrap
+        align-content: center
+
+    .miranda-info--rrss
+        display: flex
+        i
+            font-size: 45px
+            background-color: $color-socialicon-bckg
+            color: $color-socialicon
+            padding: 5px
+            border-radius: 5px
+        gap: 20px
+        i:hover
+            background-color: $color-socialicon-hover
+            color: #ffffff
+
+    .miranda-services
+        span
+            display: flex
+            gap: 25px  
+        ul
+            padding-left: 0px
+            list-style: none
+            li::before
+                content: '+'
+                padding-right: 8px
+
+    .miranda-contact--info
+        margin-left: 20px

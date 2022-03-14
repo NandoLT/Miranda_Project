@@ -1,5 +1,8 @@
 <?php include __DIR__.'/html_commons/header.php' ?>
 
-<!-- <h2> Main body part index 2</h2>
+<div style="padding-top: 300px;margin-bootom: 40px; background-color:grey;">
+    <h1 >MAIN CONTENT</h1>
+</div> 
 
-<?php include __DIR__.'/html_commons/footer.php' ?> -->
+
+<?php include __DIR__.'/html_commons/footer.php' ?> 
