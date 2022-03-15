@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Old+Standard+TT&display=swap");
+.image-slider--container {
+  width: 100%;
+  background-color: #333333;
+}
+.image-slider--container div {
+  max-width: 90%;
+  margin: auto;
+  padding: 200px;
+  color: #ffffff;
+}
+.image-slider--container div p:first-child {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: auto;
+}
+.image-slider--container div p:nth-child(2), .image-slider--container div p:nth-child(3) {
+  margin: auto auto auto -9px;
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 120px;
+}
+.image-slider--container div button {
+  width: 216px;
+  height: 60px;
+  padding: 23px 45px;
+  color: #ffffff;
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+}
+.image-slider--container div #take-tour {
+  background-color: #BEAD8E;
+  border: 2px solid #ffffff00;
+  margin-right: 30px;
+}
+.image-slider--container div #learn-more {
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+}
+
+/*# sourceMappingURL=home.css.map */

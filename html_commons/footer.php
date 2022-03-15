@@ -68,17 +68,17 @@
         </div>
     </div>
     </div>
-</footer>
-<!-- end footer -->
-<div class="sub-footer">
-    <div class="sub-footer--container">
-        <h4>Copyright &copy;Miranda - 2022</h4>
-        <div class="legal-texts">
-            <h4><a  href="#">Terms of Use</a></h4> 
-            <h4>|</h4>
-            <h4><a href="">Privacy Environment Policy</a></h4>
+    <div class="sub-footer">
+        <div class="sub-footer--container">
+            <h4>Copyright &copy;Miranda - 2022</h4>
+            <div class="legal-texts">
+                <h4><a  href="#">Terms of Use</a></h4> 
+                <h4>|</h4>
+                <h4><a href="">Privacy Environment Policy</a></h4>
+            </div>
         </div>
     </div>
-</div>
+</footer>
+<!-- end footer -->
 </body>
 </html>

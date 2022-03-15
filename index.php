@@ -1,8 +1,5 @@
+<?php include __DIR__.'/html_commons/head_common.php' ?>
 <?php include __DIR__.'/html_commons/header.php' ?>
-
-<div style="padding-top: 300px;margin-bootom: 40px; background-color:grey;">
-    <h1 >MAIN CONTENT NEW</h1>
-</div> 
-
-
+<?php include __DIR__.'/html_pages_configs/home_config.php' ?>
+<?php include __DIR__.'/html_pages/home.php' ?>
 <?php include __DIR__.'/html_commons/footer.php' ?> 

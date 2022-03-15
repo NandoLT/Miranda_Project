@@ -1,10 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@300;700&display=swap");
 footer {
+  padding-top: 10px;
+  background-color: #ffffff;
   background-image: url("../images/footer_back.png");
   background-position: center;
   background-repeat: repeat;
   background-size: contain;
-  position: relative;
+  /* position: relative;
+  bottom: 0; */
   max-width: 100%;
   width: 100%;
 }
