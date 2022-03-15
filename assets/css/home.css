@@ -38,4 +38,24 @@
   background-color: transparent;
 }
 
+.calendar-searcher--container {
+  width: 100%;
+  background-color: #222222;
+}
+.calendar-searcher--container .calendar-searcher--elements {
+  max-width: 90%;
+  margin: auto;
+}
+.calendar-searcher--container .calendar-searcher--elements form {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 40px 40px;
+  gap: 30px;
+}
+.calendar-searcher--container .calendar-searcher--elements .arrival_date, .calendar-searcher--container .calendar-searcher--elements .departure_date {
+  width: 330px;
+  display: flex;
+  flex-direction: column;
+}
+
 /*# sourceMappingURL=home.css.map */
