@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@300;700&display=swap')
 
 $font-footer-title: 'Old Standard TT', sans-serif
 $font-footer-subtitle: 'Old Standard TT', sans-serif
@@ -79,3 +79,28 @@ footer
 
     .miranda-contact--info
         margin-left: 20px
+.sub-footer
+    max-width: 100%
+    background-color:#F8F8F8
+    .sub-footer--container
+        margin: auto
+        width: 90%
+        font-family:'Roboto', sans-serif
+        font-weight: 600
+        font-size: 16px
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    
+        .legal-texts
+            display: flex
+            flex-wrap: wrap
+            gap: 5px
+
+            a 
+                text-decoration: none
+                color: black
+@media(max-width:560px)
+    .sub-footer
+        .sub-footer--container
+            justify-content: space-around

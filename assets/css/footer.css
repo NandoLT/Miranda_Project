@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@300;700&display=swap");
 footer {
   background-image: url("../images/footer_back.png");
   background-position: center;
@@ -70,6 +70,36 @@ footer .miranda-services ul li::before {
 }
 footer .miranda-contact--info {
   margin-left: 20px;
+}
+
+.sub-footer {
+  max-width: 100%;
+  background-color: #F8F8F8;
+}
+.sub-footer .sub-footer--container {
+  margin: auto;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.sub-footer .sub-footer--container .legal-texts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+.sub-footer .sub-footer--container .legal-texts a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 560px) {
+  .sub-footer .sub-footer--container {
+    justify-content: space-around;
+  }
 }
 
 /*# sourceMappingURL=footer.css.map */

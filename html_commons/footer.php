@@ -17,7 +17,7 @@
                 </p>
             </div>
             <div class="miranda-info--rrss">
-                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-facebook-square"></i> 
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-behance-square"></i>
                 <i class="fab fa-linkedin"></i>
@@ -70,5 +70,15 @@
     </div>
 </footer>
 <!-- end footer -->
+<div class="sub-footer">
+    <div class="sub-footer--container">
+        <h4>Copyright &copy;Miranda - 2022</h4>
+        <div class="legal-texts">
+            <h4><a  href="#">Terms of Use</a></h4> 
+            <h4>|</h4>
+            <h4><a href="">Privacy Environment Policy</a></h4>
+        </div>
+    </div>
+</div>
 </body>
 </html>
