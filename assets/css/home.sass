@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Old+Standard+TT&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:@400&family=Archivo:wght@700&family=Old+Standard+TT&display=swap')
 
 .image-slider--container
     width: 100%
@@ -47,6 +47,31 @@
             flex-wrap: wrap
             padding: 40px 40px
             gap: 30px
+        label
+            color: #ffffff
+            font-family: 'Roboto', sans-serif
+            font-size: 16px
+        input[type=date]
+            border-bottom: 2px solid #BEAD8E
+
+            border-top: none
+            border-left: none
+            border-right: none
+            background-color: transparent
+            color: white
+            padding-bottom: 10px
+            flex-direction: row-reverse
+        input[type=date]::-webkit-datetime-edit
+            font-family: 'Roboto', sans-serif
+            font-size: 14px
+            color: #686868
+
+        input[type=date]::-webkit-calendar-picker-indicator
+            width: 16px
+            height: 16px
+            background-image: url('../images/calendar_icon.png')
+            margin-inline-start: 0px
+            margin-inline-end: 10px
         .arrival_date, .departure_date
             width: 330px
             display: flex

@@ -25,6 +25,22 @@
             </form>
         </div>
     </div>
+    <!-- <div class="calendar-searcher--container">
+        <div class="calendar-searcher--elements">
+            <form>
+                <div class="arrival_date">
+                    <label>Arrival Date</label>
+                    <input type="date" id="arrival-date" name="arrival-date" />
+                </div>
+                <div class="departure_date">
+                    <label>Departure Date</label>
+                    <input type="date" id="departure-date" name="departure-date" />
+                </div>
+
+                <input type="submit">
+            </form>
+        </div>
+    </div> -->
 
     <div style="background-color:yellow" class="about-us--container">
         
