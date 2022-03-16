@@ -110,6 +110,7 @@
   left: 20%;
   top: -155px;
   color: black;
+  box-shadow: 0px 0px 7px 2px #2222221f;
 }
 .about-us--container #box-luxury {
   background-color: #222222;
@@ -120,10 +121,17 @@
 .about-us--container .our-underground {
   height: 530px;
   width: 55%;
-  background-color: grey;
+  background-color: #F9F9F9;
   margin-right: 0px;
   margin-left: auto;
   margin-bottom: 0px;
+}
+.about-us--container .our-underground .our-underground--content {
+  width: 45%;
+  margin: auto;
+  position: relative;
+  top: -50px;
+  left: -135px;
 }
 .about-us--container .title-box {
   font-family: "Old Standard TT", sans-serif;
@@ -131,10 +139,23 @@
   font-weight: 400;
   margin-bottom: 15px;
 }
+.about-us--container .title-box--big {
+  font-size: 80px;
+  margin: 0px auto 0px auto;
+}
 .about-us--container .text-box {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
+  text-align: justify-center;
+}
+.about-us--container .section-name {
+  font-family: "Archivo", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 3px;
+  color: #777777;
 }
 
 /*# sourceMappingURL=home.css.map */

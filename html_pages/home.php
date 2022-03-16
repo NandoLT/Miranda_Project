@@ -26,7 +26,7 @@
         </div>
     </div>
 
-    <div style="background-color:yellow" class="about-us--container">
+    <div class="about-us--container">
         <div class="info-boxes">
             <div id="box-strong">
                 <img src="./assets/images/people_icon.png" alt="icon_people" />
@@ -48,7 +48,17 @@
             </div>
         </div>
         <div class="our-underground">
-
+            <div class="our-underground--content">
+                <p class="section-name">ABOUT US</p>
+                <p class="title-box--big">Discover Our Underground.</p>
+                <p class="text-box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+                    nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <button class="button">BOOK NOW</button>
+            </div>
         </div>
     </div>
 
