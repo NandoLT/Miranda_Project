@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:@400&family=Archivo:wght@700&family=Old+Standard+TT&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:@400&family=Archivo:wght@700&family=Old+Standard+TT&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Roboto:wght@300;700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -9,14 +13,24 @@ body {
     outline: 0;
     display: block;
 }
-
+/** Ccmmons style elemetns **/
 .main-container { 
     width: 100%;
-    /* position: relative; */
-    /* margin-bottom: 30px; */
-    /* margin-top: 30px; */
     padding-bottom: 30px;
-    /* padding-top: 30px; */
     margin-top: -16px;
     background-color:cyan
+}
+
+.button {
+    width: auto;
+    height: 60px;
+    padding: 23px 45px;
+    color: #ffffff;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 14px;
+    background-color: #BEAD8E;
+    border: 2px solid #ffffff00;
+    margin-right: 30px;
 }

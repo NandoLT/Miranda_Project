@@ -4,8 +4,8 @@
             <p>The ultimate luxury experience</p>
             <p>The Perfect</p>
             <p>Base For You</p>
-            <button id="take-tour">TAKE A TOUR</button>
-            <button id="learn-more">LEARN MORE</button>
+            <button class="button">TAKE A TOUR</button>
+            <button class="button button--empty">LEARN MORE</button>
         </div>
     </div>
 
@@ -21,29 +21,35 @@
                     <input type="date" id="departure-date" name="departure-date" />
                 </div>
 
-                <input type="submit">
+                <button class="button" type="submit">CHECK AVAILABILITY </button>
             </form>
         </div>
     </div>
-    <!-- <div class="calendar-searcher--container">
-        <div class="calendar-searcher--elements">
-            <form>
-                <div class="arrival_date">
-                    <label>Arrival Date</label>
-                    <input type="date" id="arrival-date" name="arrival-date" />
-                </div>
-                <div class="departure_date">
-                    <label>Departure Date</label>
-                    <input type="date" id="departure-date" name="departure-date" />
-                </div>
-
-                <input type="submit">
-            </form>
-        </div>
-    </div> -->
 
     <div style="background-color:yellow" class="about-us--container">
-        
+        <div class="info-boxes">
+            <div id="box-strong">
+                <img src="./assets/images/people_icon.png" alt="icon_people" />
+                <p class="title-box">Strong Team</p>
+                <p class="text-box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit, sed do eiusmod tempor.
+                </p>
+            </div>
+            <div id="box-image-topright"></div>
+            <div id="box-image-bottomleft"></div>
+            <div id="box-luxury">
+                <img src="./assets/images/calendar_icon_box.png" alt="icon_people" />
+                <p class="title-box">Luxury Room</p>
+                <p class="text-box">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing 
+                    elit, sed do eiusmod tempor.
+                </p>
+            </div>
+        </div>
+        <div class="our-underground">
+
+        </div>
     </div>
 
     <div style="background-color:purple" class="rooms--container">

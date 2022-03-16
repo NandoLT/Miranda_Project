@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:@400&family=Archivo:wght@700&family=Old+Standard+TT&display=swap')
 
 .image-slider--container
     width: 100%
@@ -18,19 +17,8 @@
         p:nth-child(2), p:nth-child(3)
             margin: auto auto auto -9px
             font-family: 'Old Standard TT', sans-serif
-            font-size: 120px
-        button
-            width: 216px
-            height: 60px
-            padding: 23px 45px
-            color: #ffffff
-            font-family: 'Archivo', sans-serif
-            font-size: 14px
-        #take-tour
-            background-color: #BEAD8E
-            border: 2px solid #ffffff00
-            margin-right: 30px
-        #learn-more
+            font-size: 120px            
+        .button--empty
             border: 2px solid #FFFFFF
             background-color: transparent
 
@@ -51,6 +39,7 @@
             color: #ffffff
             font-family: 'Roboto', sans-serif
             font-size: 16px
+            margin-bottom: 10px
         input[type=date]
             border-bottom: 2px solid #BEAD8E
 
@@ -76,3 +65,59 @@
             width: 330px
             display: flex
             flex-direction: column
+
+.about-us--container 
+    padding-top: 245px
+    .info-boxes
+         position: relative
+    .info-boxes > div 
+        padding: 50px 35px
+        text-align: center
+        width: 270px
+        height: 300px
+        position: absolute
+    
+    #box-image-topright, #box-image-bottomleft
+        background-color: #E4E4E4
+    #box-image-topright
+        left: 35%
+        top: -140px
+        background-image: url('../images/hotel_beauty.jpg')
+        background-position: bottom
+        background-size: cover
+        background-repeat: no-repeat
+    #box-image-bottomleft
+        left: 20%
+        top: 165px
+        background-image: url('../images/hotel_outdoor.jpg')
+        background-position: top
+        background-size: cover
+        background-repeat: no-repeat
+    #box-strong
+        background-color: #ffffff
+        background-image: url('../images/box_people_back.png')
+        left: 20%
+        top: -155px
+        color: black
+    #box-luxury
+        background-color: #222222
+        left: 35%
+        top: 175px
+        color: #ffffff
+
+    .our-underground
+        height: 530px
+        width: 55%
+        background-color: grey
+        margin-right: 0px
+        margin-left: auto
+        margin-bottom: 0px
+    .title-box
+        font-family:'Old Standard TT', sans-serif
+        font-size: 30px
+        font-weight: 400
+        margin-bottom: 15px
+    .text-box
+        font-family: 'Roboto', sans-serif
+        font-size: 14px
+        line-height: 20px
