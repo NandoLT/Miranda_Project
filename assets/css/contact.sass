@@ -1,0 +1,91 @@
+
+.breadcrumb-container
+    background-color: #333333
+    padding-top: 130px
+    padding-bottom: 130px
+    .breadcrumb-container--elements
+        max-width: 80%
+        margin: auto
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        align-items: flex-end
+        .breadcrumb-data
+            .section-name--breadcrumb
+                color: #ffffff
+        .breadcrumb-history
+            margin-block-end: -130px
+            background-color: #ffff
+            padding: 10px
+            .section-name--crumbhome
+                color: black
+            .section-name--crumb
+                color: #BEAD8E
+.contact-container
+    max-width: 80%
+    margin: auto
+    flex-direction: column
+    flex-wrap: nowrap
+    align-items: center
+    margin-top: 100px
+    .contact-container--data
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-evenly
+    .contact-container--data
+        .contact-data
+            width: 225px
+            height: 235px
+            display: flex
+            flex-direction: row
+            flex-wrap: nowrap
+            justify-content: space-evenly
+            align-items: flex-start
+            gap: 20px
+            .data-text, img
+                position: relative
+                right: 100px
+                top: 50px
+            img
+                max-width: 100%
+        .location
+            background-image: url('../images/01_contact.svg')
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center right
+        .phone
+            background-image: url('../images/02_contact.svg')
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center right
+        .email
+            background-image: url('../images/03_contact.svg')
+            background-repeat: no-repeat
+            background-size: contain
+            background-position: center right
+    .contact-container--map
+        text-align: center
+    .contact-container--form
+        max-width: 60%
+        margin: auto
+        form
+            margin-top: 100px
+        input
+            border: none
+            background-color: #F8F8F8
+            height: 65px
+            padding: 15px
+            width: 48%
+            margin-bottom: 30px
+        .name-email--section, .phone-subject--section, .message--section
+            display: flex
+            gap: 30px
+        .message--section input
+            width: 100%
+            height: 150px
+        .btn-form-container button
+            display: flex
+            margin: auto
+
