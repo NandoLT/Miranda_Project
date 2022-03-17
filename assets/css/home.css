@@ -133,29 +133,40 @@
   top: -50px;
   left: -135px;
 }
-.about-us--container .title-box {
+
+.title-box {
   font-family: "Old Standard TT", sans-serif;
   font-size: 30px;
   font-weight: 400;
   margin-bottom: 15px;
 }
-.about-us--container .title-box--big {
+
+.title-box--big {
   font-size: 80px;
   margin: 0px auto 0px auto;
 }
-.about-us--container .text-box {
+
+.text-box {
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   line-height: 20px;
   text-align: justify-center;
 }
-.about-us--container .section-name {
+
+.section-name {
   font-family: "Archivo", sans-serif;
   font-size: 14px;
   font-weight: 700;
   line-height: 15px;
   letter-spacing: 3px;
   color: #777777;
+}
+
+.rooms--container .rooms-titles {
+  text-align: center;
+}
+.rooms--container .rooms-slider {
+  min-height: 650px;
 }
 
 /*# sourceMappingURL=home.css.map */

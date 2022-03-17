@@ -62,8 +62,129 @@
         </div>
     </div>
 
-    <div style="background-color:purple" class="rooms--container">
-
+    <div class="rooms--container">
+        <div class="rooms-titles">
+            <p class="section-name">ROOMS</p>
+            <p class="title-box--big">Hand Picked Rooms</p>
+        </div>
+        <div class="rooms-slider">
+            <section>
+                <div class="rt-container">
+                <div class="col-rt-12">
+                    <article id="cc-slider">
+                    <input name="cc-slider" id="slide1" type="radio">
+                    <input name="cc-slider" id="slide2" type="radio">
+                    <input checked="checked" name="cc-slider" id="slide3" type="radio">
+                    <input name="cc-slider" id="slide4" type="radio">
+                    <input name="cc-slider" id="slide5" type="radio">
+                    <div id="cc-slides">
+                        <div id="overflow">
+                        <div class="inner">
+                            <article>
+                            <div class="cctooltip">
+                                <div class="room-services"></div>
+                                <div class="room-details">
+                                <div class="room-details--info">
+                                    <p class="title-box--medium">Minimal Duplez Room</p>
+                                    <p class="text-box">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <div class="room-details--price">
+                                    $345/Night
+                                </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/slide-1.jpg">
+                            </article>
+                            <article>
+                            <div class="cctooltip">
+                                <div class="room-services"></div>
+                                <div class="room-details">
+                                <div class="room-details--info">
+                                    <p class="title-box--medium">Minimal Duplez Room</p>
+                                    <p class="text-box">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <div class="room-details--price">
+                                    $345/Night
+                                </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/slide-2.jpg">
+                            </article>
+                            <article>
+                            <div class="cctooltip">
+                                <div class="room-services"></div>
+                                <div class="room-details">
+                                <div class="room-details--info">
+                                    <p class="title-box--medium">Minimal Duplez Room</p>
+                                    <p class="text-box">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <div class="room-details--price">
+                                    $345/Night
+                                </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/slide-3.jpg">
+                            </article>
+                            <article>
+                            <div class="cctooltip">
+                                <div class="room-services"></div>
+                                <div class="room-details">
+                                <div class="room-details--info">
+                                    <p class="title-box--medium">Minimal Duplez Room</p>
+                                    <p class="text-box">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <div class="room-details--price">
+                                    $345/Night
+                                </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/slide-4.jpg">
+                            </article>
+                            <article>
+                            <div class="cctooltip">
+                                <div class="room-services"></div>
+                                <div class="room-details">
+                                <div class="room-details--info">
+                                    <p class="title-box--medium">Minimal Duplez Room</p>
+                                    <p class="text-box">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                        sed do eiusmod tempor incididunt ut labore et dolore.
+                                    </p>
+                                </div>
+                                <div class="room-details--price">
+                                    $345/Night
+                                </div>
+                                </div>
+                            </div>
+                            <img src="assets/images/slide-5.jpg">
+                            </article>
+                        </div>
+                        </div>
+                    </div>
+                    <div id="controls">
+                        <label for="slide1"></label>
+                        <label for="slide2"></label>
+                        <label for="slide3"></label>
+                        <label for="slide4"></label>
+                        <label for="slide5"></label>
+                    </div>
+                    </article>
+                </div>
+                </div>
+            </section>
+        </div>
     </div>
 
     <div style="background-color:brown" class="video-embed--container">

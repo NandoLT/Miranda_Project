@@ -12,6 +12,7 @@ body {
     height: 100%;
     outline: 0;
     display: block;
+    overflow-x: hidden;
 }
 /** Ccmmons style elemetns **/
 .main-container { 
