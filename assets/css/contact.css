@@ -86,20 +86,60 @@
 }
 .contact-container .contact-container--form form {
   margin-top: 100px;
+  margin-bottom: 60px;
 }
-.contact-container .contact-container--form input {
+.contact-container .contact-container--form input, .contact-container .contact-container--form textarea {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   border: none;
   background-color: #F8F8F8;
   height: 65px;
   padding: 15px;
+  padding-left: 5%;
   width: 48%;
   margin-bottom: 30px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: left;
+  background-position-x: 20px;
+  background-position-y: 23px;
+}
+.contact-container .contact-container--form textarea::before {
+  content: "texto de prueba";
+}
+.contact-container .contact-container--form #name {
+  background-image: url("../images/form_name.svg");
+}
+.contact-container .contact-container--form #email {
+  background-image: url("../images/form_mail.svg");
+}
+.contact-container .contact-container--form #phone {
+  background-image: url("../images/form_phone.svg");
+}
+.contact-container .contact-container--form #subject {
+  background-image: url("../images/form_subject.svg");
+}
+.contact-container .contact-container--form #message {
+  background-image: url("../images/form_message.svg");
+}
+.contact-container .contact-container--form input::-webkit-input-placeholder {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
 }
 .contact-container .contact-container--form .name-email--section, .contact-container .contact-container--form .phone-subject--section, .contact-container .contact-container--form .message--section {
   display: flex;
   gap: 30px;
 }
-.contact-container .contact-container--form .message--section input {
+.contact-container .contact-container--form .message--section textarea::-webkit-input-placeholder {
+  position: relative;
+  top: 0px;
+}
+.contact-container .contact-container--form .message--section textarea#message {
+  background-position-y: 17px;
+}
+.contact-container .contact-container--form .message--section textarea {
   width: 100%;
   height: 150px;
 }
