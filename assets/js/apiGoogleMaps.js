@@ -1,4 +1,27 @@
-import {locations as locationsData} from './hotelLocations.js';
+import { locations as locationsData } from './hotelLocations.js';
+import { espanaComunidades } from './espana_comunidades.js';
+const  comunidadesAutonomas = [
+	'Andalucía',
+	'Aragón',
+    'Asturias, Principado de',
+	'Balears, Illes',
+	'Canarias',
+	'Cantabria',
+	'Castilla y León',
+	'Castilla - La Mancha',
+	'Cataluña / Catalunya',
+	'Comunitat Valenciana',
+	'Extremadura',
+	'Galicia',
+	'Madrid, Comunidad de',
+	'Murcia, Región de',
+	'Navarra, Comunidad Foral de',
+	'País Vasco / Euskadi',
+	'Rioja, La',
+	'Ceuta',
+	'Melilla',
+];
+
 
 function initMap() {
 
@@ -61,7 +84,7 @@ function initMap() {
                 };
 
                 infoWindow.setPosition(pos);
-                infoWindow.setContent("Your position.");
+                infoWindow.setContent("Your position.");//aqui para poner icono personalizado
                 infoWindow.open(map);
                 map.setCenter(pos);
             },
@@ -106,15 +129,112 @@ function initMap() {
             avoidTolls: false,
         }
 
-        // get distance matrix response
         service.getDistanceMatrix(request).then((response) => {
-            // put response
-            document.getElementById("distances").innerText = JSON.stringify(
-                response,
-                null,
-                2
-            );
+
+            const distancesToOrder = response.rows[0].elements.map ((item, index) => {
+                return [destinations[index].info,((item.distance.value/1000).toFixed(2)*1)];
+            });
+            distancesToOrder.sort((a, b) => {
+                return a[1] - b[1];
+            })
+
+            
+            var listDistances='';
+
+            distancesToOrder.map(element => {
+                listDistances +=  '<div>'+`Distance to ${element[0]} ${element[1]} kms`+'</div>';
+            });
+
+            document.getElementById("distances").innerHTML = listDistances;
         });
+
+        
+    });
+
+    /** GEOCODING INPUT */
+    const geocoder = new google.maps.Geocoder();
+    const btnSend = document.getElementById('send-address');
+    const address = document.getElementById('input-address');
+    btnSend.addEventListener('click', () => {
+        console.log(address.value)
+        geocode({ address: address.value })
+    });
+
+    function geocode(request) {
+        geocoder
+            .geocode(request)
+            .then((result) => {
+                const { results } = result;
+                const lat_address = results[0].geometry.location.lat();
+                const lng_address = results[0].geometry.location.lng();
+                console.log(lat_address, lng_address)
+                distanceList(lat_address, lng_address);
+            })
+            .catch((e) => {
+                alert("Geocode was not successful for the following reason: " + e);
+            });
+    }
+
+    function distanceList(lat_address, lng_address) {
+        const service = new google.maps.DistanceMatrixService();
+        const origin = {lat:lat_address, lng:lng_address};
+        const destinations = locationsData;
+
+        const request = {
+            origins: [origin],
+            destinations: destinations,
+            travelMode: google.maps.TravelMode.DRIVING,
+            unitSystem: google.maps.UnitSystem.METRIC,
+            avoidHighways: false,
+            avoidTolls: false,
+        }
+
+        service.getDistanceMatrix(request).then((response) => {
+
+            const distancesToOrder = response.rows[0].elements.map ((item, index) => {
+                return [destinations[index].info,((item.distance.value/1000).toFixed(2)*1)];
+            });
+            distancesToOrder.sort((a, b) => {
+                return a[1] - b[1];
+            })
+
+            
+            var listDistances='';
+
+            distancesToOrder.map(element => {
+                listDistances +=  '<div>'+`Distance to ${element[0]} ${element[1]} kms`+'</div>';
+            });
+
+            document.getElementById("distances").innerHTML = listDistances;
+        });
+
+    }
+
+    /** FRONTERA COMUNIDADES */
+    const selectComunidades = document.getElementById('comunidades');
+    let regionNum = 0;
+    var regionArea;
+    for(const comunidad of comunidadesAutonomas) {
+        selectComunidades.options[selectComunidades.options.length] = new Option(comunidad,regionNum);
+        regionNum++;
+    }
+
+    selectComunidades.addEventListener('change', function()  {
+
+        const regionCords = this.value;
+
+        regionArea && regionArea.setMap(null);
+        
+        regionArea = new google.maps.Polygon({
+            paths: espanaComunidades[regionCords],
+            strokeColor: "#FF0000",
+            strokeOpacity: 0.8,
+            strokeWeight: 3,
+            fillColor: "#FF0000",
+            fillOpacity: 0.35,
+        });
+
+        regionArea.setMap(map);
     });
     
 }
