@@ -148,4 +148,9 @@
   margin: auto;
 }
 
+#map {
+  height: 600px;
+  width: 100%;
+}
+
 /*# sourceMappingURL=contact.css.map */
